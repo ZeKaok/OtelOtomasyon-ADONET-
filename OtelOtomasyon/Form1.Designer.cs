@@ -55,6 +55,7 @@
             this.btnguncelle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxGirdiler = new System.Windows.Forms.GroupBox();
+            this.btnekle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvliste)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBoxGirdiler.SuspendLayout();
@@ -281,13 +282,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnekle);
             this.groupBox1.Controls.Add(this.comboboxsec);
             this.groupBox1.Controls.Add(this.btnguncelle);
             this.groupBox1.Controls.Add(this.btnlistele);
             this.groupBox1.Controls.Add(this.btnsil);
             this.groupBox1.Location = new System.Drawing.Point(69, 242);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(642, 100);
+            this.groupBox1.Size = new System.Drawing.Size(797, 100);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçimler";
@@ -319,6 +321,16 @@
             this.groupBoxGirdiler.TabStop = false;
             this.groupBoxGirdiler.Text = "Girdiler";
             // 
+            // btnekle
+            // 
+            this.btnekle.BackColor = System.Drawing.Color.SeaShell;
+            this.btnekle.Location = new System.Drawing.Point(665, 32);
+            this.btnekle.Name = "btnekle";
+            this.btnekle.Size = new System.Drawing.Size(86, 24);
+            this.btnekle.TabIndex = 25;
+            this.btnekle.Text = "Ekle";
+            this.btnekle.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -330,7 +342,7 @@
             this.Controls.Add(this.lblara);
             this.Controls.Add(this.textBoxara);
             this.Controls.Add(this.dgvliste);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Otel Otomasyon";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -372,6 +384,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBoxGirdiler;
         private System.Windows.Forms.Label lblUlke;
+        private System.Windows.Forms.Button btnekle;
     }
 }
 

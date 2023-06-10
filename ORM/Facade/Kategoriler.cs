@@ -14,6 +14,8 @@ namespace ORM.Facade
 
         public DbSet<Kategori> Kategoris
         { get; set; }
+
+
         
     }
 }
