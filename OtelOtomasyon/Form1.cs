@@ -42,6 +42,7 @@ namespace OtelOtomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -52,6 +53,7 @@ namespace OtelOtomasyon
                 Degistir();
                 lblad.Visible = true;
                 textBoxad.Visible = true;
+                
 
             }
             else if (comboboxsec.SelectedIndex == 1)
@@ -116,7 +118,32 @@ namespace OtelOtomasyon
 
         private void btnlistele_Click(object sender, EventArgs e)
         {
+            if(comboboxsec.SelectedIndex == 0)
+            {
+                KategorilerTableAdapter kategorilerTableAdapter = new KategorilerTableAdapter();
+                kategorilerTableAdapter.ToString();
+                dgvliste.DataSource = kategorilerTableAdapter;
+            }
+            else if(comboboxsec.SelectedIndex == 1)
+            {
 
+            }
+            else if(comboboxsec.SelectedIndex == 2)
+                {
+
+            }
+            else if(comboboxsec.SelectedIndex == 3)
+                {
+
+            }
+            else if(comboboxsec.SelectedIndex == 4)
+            {
+
+            }
+            else if(comboboxsec.SelectedIndex == 5)
+            {
+
+            }
         }
 
         private void btnsil_Click(object sender, EventArgs e)
@@ -149,6 +176,11 @@ namespace OtelOtomasyon
                     textBox.Text = dgvliste.CurrentRow.Cells[e.RowIndex].Value.ToString();
                 }
             }
+        }
+
+        private void textBoxara_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -272,6 +272,7 @@
             this.textBoxara.Name = "textBoxara";
             this.textBoxara.Size = new System.Drawing.Size(155, 22);
             this.textBoxara.TabIndex = 22;
+            this.textBoxara.TextChanged += new System.EventHandler(this.textBoxara_TextChanged);
             // 
             // btnguncelle
             // 

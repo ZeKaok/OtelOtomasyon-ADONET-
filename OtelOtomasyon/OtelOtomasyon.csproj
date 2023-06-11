@@ -71,6 +71,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Kasa.cs" />
+    <Compile Include="Entity\Kategori.cs" />
+    <Compile Include="Entity\Musteri.cs" />
+    <Compile Include="Entity\Oda.cs" />
+    <Compile Include="Entity\OdaOzellik.cs" />
+    <Compile Include="Entity\OdaTur.cs" />
+    <Compile Include="Entity\Ozellik.cs" />
+    <Compile Include="Entity\Personel.cs" />
+    <Compile Include="Entity\Satis.cs" />
+    <Compile Include="Entity\SatisDetay.cs" />
+    <Compile Include="Entity\Tedarikci.cs" />
+    <Compile Include="Facade\Kasalar.cs" />
+    <Compile Include="Facade\Kategoriler.cs" />
+    <Compile Include="Facade\Musteriler.cs" />
+    <Compile Include="Facade\Odalar.cs" />
+    <Compile Include="Facade\OdaOzellikler.cs" />
+    <Compile Include="Facade\OdaTurler.cs" />
+    <Compile Include="Facade\Ozellikler.cs" />
+    <Compile Include="Facade\Personeller.cs" />
+    <Compile Include="Facade\SatisDetaylar.cs" />
+    <Compile Include="Facade\Satislar.cs" />
+    <Compile Include="Facade\Tedarikciler.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ORM\ORM.csproj">
+      <Project>{73d5b7ba-9c2b-47cc-91b8-5a1cad2da237}</Project>
+      <Name>ORM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
