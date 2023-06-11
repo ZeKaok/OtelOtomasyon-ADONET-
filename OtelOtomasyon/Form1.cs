@@ -33,7 +33,6 @@ namespace OtelOtomasyon
             }
 
         }
-        SqlConnection connection = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=OtelOtomasyonu;Integrated Security=True");
         private void Form1_Load(object sender, EventArgs e)
         {
 
