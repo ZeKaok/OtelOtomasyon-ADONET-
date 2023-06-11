@@ -133,5 +133,22 @@ namespace OtelOtomasyon
         {
 
         }
+
+        private void dgvliste_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvliste_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var textler = groupBoxGirdiler.Controls.OfType<Label>();
+            foreach(var textBox in textler)
+            {
+                if (textBox.Visible == true)
+                {
+                    textBox.Text = dgvliste.CurrentRow.Cells[e.RowIndex].Value.ToString();
+                }
+            }
+        }
     }
 }

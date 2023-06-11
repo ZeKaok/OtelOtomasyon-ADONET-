@@ -54,8 +54,8 @@
             this.textBoxara = new System.Windows.Forms.TextBox();
             this.btnguncelle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBoxGirdiler = new System.Windows.Forms.GroupBox();
             this.btnekle = new System.Windows.Forms.Button();
+            this.groupBoxGirdiler = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvliste)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBoxGirdiler.SuspendLayout();
@@ -71,6 +71,8 @@
             this.dgvliste.RowTemplate.Height = 24;
             this.dgvliste.Size = new System.Drawing.Size(892, 174);
             this.dgvliste.TabIndex = 0;
+            this.dgvliste.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvliste_CellClick);
+            this.dgvliste.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvliste_CellContentClick);
             this.dgvliste.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dgvliste_CellStateChanged);
             // 
             // comboboxsec
@@ -296,6 +298,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçimler";
             // 
+            // btnekle
+            // 
+            this.btnekle.BackColor = System.Drawing.Color.SeaShell;
+            this.btnekle.Location = new System.Drawing.Point(665, 32);
+            this.btnekle.Name = "btnekle";
+            this.btnekle.Size = new System.Drawing.Size(86, 24);
+            this.btnekle.TabIndex = 25;
+            this.btnekle.Text = "Ekle";
+            this.btnekle.UseVisualStyleBackColor = false;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
+            // 
             // groupBoxGirdiler
             // 
             this.groupBoxGirdiler.Controls.Add(this.textBoxad);
@@ -322,17 +335,6 @@
             this.groupBoxGirdiler.TabIndex = 26;
             this.groupBoxGirdiler.TabStop = false;
             this.groupBoxGirdiler.Text = "Girdiler";
-            // 
-            // btnekle
-            // 
-            this.btnekle.BackColor = System.Drawing.Color.SeaShell;
-            this.btnekle.Location = new System.Drawing.Point(665, 32);
-            this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(86, 24);
-            this.btnekle.TabIndex = 25;
-            this.btnekle.Text = "Ekle";
-            this.btnekle.UseVisualStyleBackColor = false;
-            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // Form1
             // 
