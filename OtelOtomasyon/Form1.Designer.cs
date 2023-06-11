@@ -71,6 +71,7 @@
             this.dgvliste.RowTemplate.Height = 24;
             this.dgvliste.Size = new System.Drawing.Size(892, 174);
             this.dgvliste.TabIndex = 0;
+            this.dgvliste.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dgvliste_CellStateChanged);
             // 
             // comboboxsec
             // 
@@ -108,6 +109,7 @@
             this.btnsil.TabIndex = 3;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // textBoxad
             // 
@@ -330,6 +332,7 @@
             this.btnekle.TabIndex = 25;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = false;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // Form1
             // 
