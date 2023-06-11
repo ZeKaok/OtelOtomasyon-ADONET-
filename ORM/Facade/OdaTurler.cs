@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         DataTable IORM<OdaTur>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("OdaTurleri");
         }
 
         bool IORM<OdaTur>.Update(OdaTur entity)

@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         DataTable IORM<Tedarikci>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Tedarikciler");
         }
 
         bool IORM<Tedarikci>.Update(Tedarikci entity)

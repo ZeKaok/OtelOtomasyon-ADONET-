@@ -21,7 +21,7 @@ namespace ORM.Facade
 
         DataTable IORM<Odalar>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Odalar");
         }
 
         bool IORM<Odalar>.Update(Odalar entity)

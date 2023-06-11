@@ -5,26 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ORM.Facade
+namespace ORM
 {
-    internal class SatisDetaylar : IORM<SatisDetaylar>
+    public class ORMBase<T> : IORM<T>
     {
-        bool IORM<SatisDetaylar>.Delete(SatisDetaylar entity)
+        bool IORM<T>.Delete(T entity)
         {
             throw new NotImplementedException();
         }
 
-        bool IORM<SatisDetaylar>.Insert(SatisDetaylar entity)
+        bool IORM<T>.Insert(T entity)
         {
             throw new NotImplementedException();
         }
 
-        DataTable IORM<SatisDetaylar>.Select()
+        DataTable IORM<T>.Select()
         {
-            return Tools.Select("SatisDetaylari");
+            throw new NotImplementedException();
         }
 
-        bool IORM<SatisDetaylar>.Update(SatisDetaylar entity)
+        bool IORM<T>.Update(T entity)
         {
             throw new NotImplementedException();
         }

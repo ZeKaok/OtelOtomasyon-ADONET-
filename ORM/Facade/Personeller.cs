@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         DataTable IORM<Personel>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Personeller");
         }
 
         bool IORM<Personel>.Update(Personel entity)

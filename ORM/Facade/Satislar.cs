@@ -21,7 +21,7 @@ namespace ORM.Facade
 
         DataTable IORM<Satislar>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Satislar");
         }
 
         bool IORM<Satislar>.Update(Satislar entity)

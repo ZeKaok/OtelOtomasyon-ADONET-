@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         DataTable IORM<Musteri>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Musteriler");
         }
 
         bool IORM<Musteri>.Update(Musteri entity)

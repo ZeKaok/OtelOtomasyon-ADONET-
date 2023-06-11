@@ -24,7 +24,7 @@ namespace ORM.Facade
 
         DataTable IORM<Kategori>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Kategoriler");
         }
 
         bool IORM<Kategori>.Update(Kategori entity)

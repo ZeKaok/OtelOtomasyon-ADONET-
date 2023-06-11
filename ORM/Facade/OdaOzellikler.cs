@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         public DataTable Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("OdaOzellikleri");
         }
 
         public bool Update(OdaOzellik entity)

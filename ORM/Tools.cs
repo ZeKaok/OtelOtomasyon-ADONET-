@@ -10,10 +10,10 @@ using System.Data;
 namespace ORM
 {
     public class Tools
-    {   //Singleton Pattern. ADON.NET ile proje geliştirildi.
-		private SqlConnection baglanti;
+    {   //Singleton Pattern. ADO .NET ile proje geliştirildi.
+		private static SqlConnection baglanti;
 
-		public SqlConnection Baglanti
+		public static SqlConnection Baglanti
 		{
 			get {
 
@@ -22,9 +22,9 @@ namespace ORM
 				return baglanti; }
 		}
 
-		public static DataTable Select(string procName, SqlConnection baglanti)
+		public static DataTable Select(string procName)
 		{
-            SqlDataAdapter adapter = new SqlDataAdapter(string.Format("prc_{0}_Select", procName), baglanti);
+            SqlDataAdapter adapter = new SqlDataAdapter(string.Format("prc_{0}_Select", procName), Tools.Baglanti);
 			adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 			DataTable dt = new DataTable();
 			adapter.Fill(dt);

@@ -22,7 +22,7 @@ namespace ORM.Facade
 
         DataTable IORM<Kasa>.Select()
         {
-            throw new NotImplementedException();
+            return Tools.Select("Kasa");
         }
 
         bool IORM<Kasa>.Update(Kasa entity)
