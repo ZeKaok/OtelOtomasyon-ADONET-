@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelOtomasyon.Entity
 {
-    internal class Kasalar
+    internal class Tedarikciler
     {
     }
 }
